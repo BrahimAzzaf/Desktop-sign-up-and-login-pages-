@@ -1,0 +1,193 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: #FDF9F7;
+    font-family: 'Poppins', sans-serif;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.container img{
+    width: 45vw;
+    height: 100vh;
+}
+.wrapper{
+    margin: 0 auto;
+}
+.wrapper p{
+    text-align: center;
+    padding-bottom: 20px;
+}
+.wrapper h1{
+    font-weight: 400;
+}
+
+
+
+.Dont_have_an_account{
+    text-align: center;
+    margin-top: 15px;
+    
+}
+.terms {
+    margin-bottom:40px;
+}
+
+input{
+    border: 1px solid #D9D9D9;
+    margin-bottom: 15px;
+    padding: 5px 10px;
+    border-radius: 8px;
+    display: block;
+    width: 100%;
+    
+}   
+.checkbox  p{
+    margin-left: 10px;
+    word-wrap:unset;
+}
+.checkbox input{
+    height: 25px;
+    width: 20px;
+}
+.checkbox{
+    display: flex;
+
+}
+
+input[type="submit"] {
+    cursor: pointer;
+    background-color: hsla(95, 46%, 25%, 1);
+    border: none;
+    border-radius: 8px;
+    padding: 5px 0;
+    text-decoration: none;
+    text-align: center;
+    color: #fff;
+    font-weight: bold;
+    margin: 0;
+}
+
+input[type="submit"]:hover{
+    color: hsla(95, 46%, 25%, 1);
+    border: transparent;
+    background-color: transparent;
+    box-shadow: 0px 1px 5px 0px #000;
+    transition: ease-in;
+    transition-duration: .5s;
+
+} 
+
+.Or{
+    padding: 40px 0;
+    text-align: center;
+}
+
+a{
+    color: #000;
+}
+.singIn{
+    justify-content: space-between;
+}
+.singIn a{
+    
+    font-size: 16px;
+    border-radius: 8px;
+    padding: 8px 8px 5px 5px;
+    margin-bottom: 10px;
+    color: #000;
+    justify-content: space-between;
+    text-decoration: none;
+    border: 1px solid #000;
+    
+}
+.singIn img{
+    width: 20px;
+    height: 20px;
+    margin: 0px;
+    padding: 0px;
+}
+
+@media (max-width:768px) {
+    .container{
+        flex-direction: column;
+        background: url(./images/chris-lee-70l1tDAI6rM-unsplash\ 1.png);
+        background-repeat: no-repeat;
+        background-size: cover;
+        height:100vh ;
+        
+
+    }
+    .container img{
+        display: none;
+    }
+    .singIn {
+        display: flex;
+    }
+    .singIn a{
+        text-align: center;
+        display: flex;
+        width: 49%;
+    }
+    .wrapper form{
+        background-color: #b1b1b1b5;
+        width: 70vw;
+        padding: 10px 20px;
+        border-radius: 10px; 
+        
+    }
+    .wrapper{
+        display: flex;
+        align-items: center;
+
+    }
+.wrapper h1{
+    text-align: center;
+}
+    .singIn img{
+        width:3vw;
+        display: flex;
+        margin: 0px;
+        padding: 0px;
+    }
+}
+
+
+
+@media (max-width:375px) {
+    .container{
+        padding: 10px;
+        border-radius:10px ;
+        margin: 0 10px;
+    }
+    
+    form{
+        padding: 10px;
+
+    }
+    
+
+    .wrapper h1{
+        padding: 0;
+    }
+    .singIn{
+        flex-direction: column;
+
+    }
+    .singIn a{
+        width: 100%;
+    }
+    .singIn img{
+        width: fit-content;
+    }
+    .Or{
+        padding: 0;
+    }
+}
